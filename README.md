@@ -191,6 +191,12 @@ Exemplo:
 chmod -R u+rwx g-rwx o+rwx arquivo/diretorio
 chmod -R 777 arquivo diretorio
 ```
+Exemplo:
+```
+chmod -R g-x o-wx arquivo/diretorio
+```
+O exemplo acima remove a permissão de execução do grupo, como também remove as permissões de escrita e exeução de outros usuários.
+
 A o primeiro grupo de opções ([u/g/o]) é referente ao tipo de usuário, onde:
 <table>
   <thead>
@@ -215,7 +221,56 @@ A o primeiro grupo de opções ([u/g/o]) é referente ao tipo de usuário, onde:
 
 O segundo grupo de opções ([+/-]) indica a inclusão (+) ou remoção (-) das permissões indicadas no próximo grupo de opções ([r/w/x]).
 
-
+Também é possível fazer a mudança de permissões através da indicação de um número octal entre 0 e 7. A tabela a seguir mostra o valor octal e suas repectivas permissões e valores em binário.
+<table>
+  <thead>
+    <th>Dígito octal</th>
+    <th>Permissões</th>
+    <th>Valor binário</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>---</td>
+      <td>000</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>--x</td>
+      <td>001</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>-w-</td>
+      <td>010</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>-wx</td>
+      <td>011</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>r--</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>r-x</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>rx-</td>
+      <td>110</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>rwx</td>
+      <td>111</td>
+    </tr>
+  </tbody>
+</table>
 Dígito Octal	Notação	Valor Binário
 0	---	000
 1	--x	001
