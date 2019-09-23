@@ -157,7 +157,7 @@ killall -9 [PID/Nome do processo]
   </tbody>
 </table>
 
-<h4>Proximos 3 grupos de 3 caracteres sao as permissões referentes a Dono(UID)/Grupo/Outros</h4>
+<h4>Os próximos 3 grupos de 3 caracteres são as permissões referentes a Dono(UID)/Grupo/Outros</h4>
 <table>
   <thead>
     <th>Caractere</th>
@@ -182,9 +182,39 @@ killall -9 [PID/Nome do processo]
     </tr>
   </tbody>
 </table>
-r - read - leitura
-w - write - escrita
-x - execute - execucao
+
+É possível alterar as permissões de um arquivo através do seguinte comando:
+
+```
+chmod -R [u/g/o][+/-][r/w/x] arquivo/diretório
+Exemplo:
+chmod -R u+rwx g-rwx o+rwx arquivo/diretorio
+chmod -R 777 arquivo diretorio
+```
+A o primeiro grupo de opções ([u/g/o]) é referente ao tipo de usuário, onde:
+<table>
+  <thead>
+    <th>Caractere</th>
+    <th>Tipo de usuário</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>u</td>
+      <td>Dono</td>
+    </tr>
+    <tr>
+      <td>g</td>
+      <td>Grupo</td>
+    </tr>
+    <tr>
+      <td>o</td>
+      <td>Outros</td>
+    </tr>
+  </tbody>
+</table>
+
+O segundo grupo de opções ([+/-]) indica a inclusão (+) ou remoção (-) das permissões indicadas no próximo grupo de opções ([r/w/x]).
+
 
 Dígito Octal	Notação	Valor Binário
 0	---	000
