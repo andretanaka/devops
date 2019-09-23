@@ -1,7 +1,14 @@
 <h1>DevOps</h1>
 Apresentação sobre Linux
 
-# Comandos Linux
+<h2>Atalhos de teclado</h2>
+
+```
+tab
+ctrl + r
+```
+
+<h2>Comandos Linux</h2>
 
 Listar o conteúdo de um diretório
 
@@ -19,22 +26,31 @@ Mudando de diretório
 
 ```
 cd [diretório]
-cd ..
-cd /
-cd ~
-cd -
+cd .. - Volta um diretório
+cd / -  Volta para a raíz
+cd ~ -  Volta para a home do usuário atual
+cd - -  Volta para o diretório anterior
 ```
-cd diretorio - mudar de diretorio
-cd .. - voltar um diretorio
-cd / - ir para a pasta raiz
-cd ~ - ir para a pasta home do usuario atual
-cd - - volta para o diretorio anterior
-tab - completar
-ctrl + r - procurar reverso
-man ls
-ls --help
-mkdir - cria um diretorio
-rmdir - remove um diretorio
+
+Ajuda sobre um comando
+
+```
+man [comando]
+[comando] --help
+```
+
+Criar um diretório
+
+```
+mkdir [diretorio]
+```
+
+Remove um diretório
+
+```
+rmdir [diretorio]   
+rmdir -r [diretorio]
+```
 vim texto.txt - abre o arquivo texto.txt no vim
 touch texto.txt - cria o arquivo texto.txt
 echo "texto" > texto.txt - cria o arquivo texto.txt com o "texto" escrito nele
