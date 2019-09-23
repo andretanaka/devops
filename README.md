@@ -157,7 +157,31 @@ killall -9 [PID/Nome do processo]
   </tbody>
 </table>
 
-<h4>Proximos 3 grupos de 3 letras sao as permissoes referentes a Dono(UID)/Grupo/Outros</h4>
+<h4>Proximos 3 grupos de 3 caracteres sao as permissões referentes a Dono(UID)/Grupo/Outros</h4>
+<table>
+  <thead>
+    <th>Caractere</th>
+    <th>Significado</th>
+    <th>Função</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>r</td>
+      <td>Read</td>
+      <td>Leitura</td>
+    </tr>
+    <tr>
+      <td>w</td>
+      <td>Write</td>
+      <td>Escrita</td>
+    </tr>
+    <tr>
+      <td>x</td>
+      <td>Execute</td>
+      <td>Execução</td>
+    </tr>
+  </tbody>
+</table>
 r - read - leitura
 w - write - escrita
 x - execute - execucao
