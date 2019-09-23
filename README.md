@@ -1,12 +1,29 @@
-# DevOps
+<h1>DevOps</h1>
 Apresentação sobre Linux
 
 # Comandos Linux
 
 Listar o conteúdo de um diretório
-ls -la
 
-pwd - onde esta
+```
+ls -la
+```
+
+Verificar o diretório que o usuário esta situado.
+
+```
+pwd
+```
+
+Mudando de diretório
+
+```
+cd [diretório]
+cd ..
+cd /
+cd ~
+cd -
+```
 cd diretorio - mudar de diretorio
 cd .. - voltar um diretorio
 cd / - ir para a pasta raiz
