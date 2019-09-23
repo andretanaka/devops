@@ -15,6 +15,9 @@ Listar o conteúdo de um diretório
 ```
 ls -la
 ```
+> -l = traz detalhes dos arquivos como datas de criação, permissões, nome de proprietário e grupo, e tamanho.
+
+> -a ou -all = inclui os arquivos ocultos na listagem
 
 Verificar o diretório que o usuário esta situado.
 
@@ -51,12 +54,27 @@ Remove um diretório
 rmdir [diretorio]   
 rmdir -r [diretorio]
 ```
-vim texto.txt - abre o arquivo texto.txt no vim
-touch texto.txt - cria o arquivo texto.txt
-echo "texto" > texto.txt - cria o arquivo texto.txt com o "texto" escrito nele
+
+Criando um arquivo
+
+```
+touch texto.txt          - Cria um arquivo vazio
+> texto.txt              - Cria um arquivo vazio. Se o arquivo existir, esse comando limpa o conteúdo do arquivo.
+echo "texto" > texto.txt - Cria o arquivo texto.txt com o conteúdo "texto".
+vim texto.txt            - Abre uma instância do vim editando um arquivo vazio chamado texto.txt.
+```
+Concaternar um texto no final do arquivo
+
+```
 echo "texto" >> texto.txt - concatena no final do arquivo
-cat texto.txt - exibe o conteudo do arquivo texto.txt
-> texto.txt - cria o arquivo texto.txt e se ele existir, apaga o conteudo dele
+```
+
+Exibe o conteúdo de um arquivo
+
+```
+cat texto.txt
+```
+
 alias ll="ls -la" - cria o alias ll com o comando ls -la
 unalias ll - remove o alias ll
 ps -ef - exibe os processos em execucao sem infos de processamento e memoria usados
