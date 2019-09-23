@@ -88,10 +88,18 @@ unalias [alias]
 ```
 
 Exibir os processos em execução
-ps -ef - exibe os processos em execucao sem infos de processamento e memoria usados
 
-Exibir os processos em execução com as informações de processamento e memória usados.
-top
+```
+ps -ef - exibe os processos em execucao sem infos de processamento e memoria usados
+```
+
+> -a = Exibe todos os processos existentes.
+> -e = Exibe as variáveis de ambiente relacionadas aos processos.
+> -f = Exibe a árvore de execução dos processos.
+> -l = Exibe mais campos no resultado.
+> -m = Exibe a quantidade de memória ocupada por cada processo.
+> -u = Exibe o nome do usuário que iniciou determinado processo e a hora em que isso ocorreu.
+> -x = Exibe os processos que não estão associados a terminais.
 
 
 kill -9
