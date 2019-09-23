@@ -90,7 +90,8 @@ unalias [alias]
 Exibir os processos em execução
 
 ```
-ps -ef - exibe os processos em execucao sem infos de processamento e memoria usados
+ps 
+ps -ef | grep [nome do processo]
 ```
 
 > -a = Exibe todos os processos existentes.
@@ -108,18 +109,16 @@ ps -ef - exibe os processos em execucao sem infos de processamento e memoria usa
 > -x = Exibe os processos que não estão associados a terminais.
 
 
-kill -9
+Terminar um processo
 
-chmod -R u+rwx g-rwx o+rwx arquivo/diretorio
-chmod -R 777 arquivo diretorio
+```
+kill -9 [PID/Nome do processo]
+killall -9 [PID/Nome do processo]
+```
 
-chown novousuario arquivo/diretorio
-chown novousuario:novogrupo arquivo/diretorio
-chown :novogrupo arquivo/diretorio
-
-Sistema de permissoes
+<h2>Sistema de permissões</h2>
 -rwxrwxrwx
-primeira letra = Natureza do arquivo:
+Primeira letra = Natureza do arquivo:
 d	Diretório
 l	Link
 
@@ -137,6 +136,13 @@ Dígito Octal	Notação	Valor Binário
 5	r-x	101
 6	rw-	110
 7	rwx	111
+
+chmod -R u+rwx g-rwx o+rwx arquivo/diretorio
+chmod -R 777 arquivo diretorio
+
+chown novousuario arquivo/diretorio
+chown novousuario:novogrupo arquivo/diretorio
+chown :novogrupo arquivo/diretorio
 
 Curiosidaman: why did you get a divorce?de 
 
