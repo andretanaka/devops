@@ -118,53 +118,46 @@ killall -9 [PID/Nome do processo]
 
 <h2>Sistema de permissões</h2>
 <b>-rwxrwxrwx</b>
-Primeiro caractere = Natureza do arquivo:
+
+<h4>Primeiro caractere = Natureza do arquivo:</h4>
 <table>
   <thead>
     <th>Caractere</th>
     <th>Significado</th>
-    <th>Exemplo</th>
   </thead>
   <tbody>
     <tr>
       <td>-</td>
       <td>Arquivo regular</td>
-      <td></td>
     </tr>
     <tr>
       <td>d</td>
       <td>Arquivo de diretório</td>
-      <td></td>
     </tr>
     <tr>
       <td>l</td>
       <td>Link</td>
-      <td></td>
     </tr>
     <tr>
       <td>b</td>
       <td>Arquivos de dispositivo orientado a bloco</td>
-      <td></td>
     </tr>
     <tr>
       <td>c</td>
       <td>Arquivos de dispositivo orientado a caractere</td>
-      <td></td>
     </tr>
     <tr>
       <td>s</td>
       <td>Socket</td>
-      <td></td>
     </tr>
     <tr>
       <td>p</td>
       <td>Named pipe (ou FIFO)</td>
-      <td></td>
     </tr>
   </tbody>
 </table>
 
-Proximos 3 grupos de 3 letras sao as permissoes referentes a Dono(UID)/Grupo/Outros
+<h4>Proximos 3 grupos de 3 letras sao as permissoes referentes a Dono(UID)/Grupo/Outros</h4>
 r - read - leitura
 w - write - escrita
 x - execute - execucao
