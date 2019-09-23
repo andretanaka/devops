@@ -75,8 +75,18 @@ Exibe o conteúdo de um arquivo
 cat texto.txt
 ```
 
-alias ll="ls -la" - cria o alias ll com o comando ls -la
-unalias ll - remove o alias ll
+Criando um alias
+
+```
+alias [alias]="[comando]"
+```
+
+Removendo um alias
+
+```
+unalias [alias]
+```
+
 ps -ef - exibe os processos em execucao sem infos de processamento e memoria usados
 top - exibe os processos em execucao com infos de processamento e memoria usados
 kill -9
