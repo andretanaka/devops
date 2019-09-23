@@ -87,8 +87,13 @@ Removendo um alias
 unalias [alias]
 ```
 
+Exibir os processos em execução
 ps -ef - exibe os processos em execucao sem infos de processamento e memoria usados
-top - exibe os processos em execucao com infos de processamento e memoria usados
+
+Exibir os processos em execução com as informações de processamento e memória usados.
+top
+
+
 kill -9
 
 chmod -R u+rwx g-rwx o+rwx arquivo/diretorio
