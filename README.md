@@ -283,7 +283,6 @@ chown novousuario:novogrupo arquivo/diretorio
 chown :novogrupo arquivo/diretorio
 ```
 <h2>Curiosidades</h2>
-man: why did you get a divorce?
 
 https://github.com/torvalds/linux - github do linux torvalds
 
