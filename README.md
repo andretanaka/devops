@@ -261,7 +261,7 @@ Também é possível fazer a mudança de permissões através da indicação de 
     </tr>
     <tr>
       <td>6</td>
-      <td>rx-</td>
+      <td>rw-</td>
       <td>110</td>
     </tr>
     <tr>
@@ -271,31 +271,36 @@ Também é possível fazer a mudança de permissões através da indicação de 
     </tr>
   </tbody>
 </table>
-Dígito Octal	Notação	Valor Binário
-0	---	000
-1	--x	001
-2	-w-	010
-3	-wx	011
-4	r--	100
-5	r-x	101
-6	rw-	110
-7	rwx	111
 
-chmod -R u+rwx g-rwx o+rwx arquivo/diretorio
-chmod -R 777 arquivo diretorio
+```
+chmod -R 777 arquivo/diretorio
+```
 
+É possível mudar o dono e/ou o grupo de um arquivo/diretório com o seguinte comando:
+```
 chown novousuario arquivo/diretorio
 chown novousuario:novogrupo arquivo/diretorio
 chown :novogrupo arquivo/diretorio
-
-Curiosidaman: why did you get a divorce?de 
+```
+<h2>Curiosidades</h2>
+man: why did you get a divorce?
 
 https://github.com/torvalds/linux - github do linux torvalds
-https://www.kernel.org/doc/html/latest/ - documentacao do kernel
-man 7 ascii - Lista a tabela ascii
-man: why did you get a divorce? 
-sl
-fortune | cowsay
-cmatrix
-telnet towel.blinkenlights.nl
 
+https://www.kernel.org/doc/html/latest/ - documentacao do kernel
+
+man 7 ascii - Lista a tabela ascii
+
+man: why did you get a divorce? 
+
+sudo apt-get install sl
+
+sudo apt-get install cowsay
+
+sudo apt-get install fortune
+
+fortune | cowsay
+
+sudo apt-get install cmatrix
+
+telnet towel.blinkenlights.nl
