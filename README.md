@@ -291,7 +291,7 @@ https://www.kernel.org/doc/html/latest/ - documentacao do kernel
 
 man 7 ascii - Lista a tabela ascii
 
-man: why did you get a divorce? 
+[ whereis my brain?  
 
 sudo apt-get install sl
 
